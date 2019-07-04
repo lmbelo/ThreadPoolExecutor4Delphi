@@ -1,0 +1,50 @@
+package ThreadPoolExecutor;
+
+{$R *.res}
+{$ALIGN 8}
+{$ASSERTIONS ON}
+{$BOOLEVAL OFF}
+{$DEBUGINFO ON}
+{$EXTENDEDSYNTAX ON}
+{$IMPORTEDDATA ON}
+{$IOCHECKS ON}
+{$LOCALSYMBOLS ON}
+{$LONGSTRINGS ON}
+{$OPENSTRINGS ON}
+{$OPTIMIZATION OFF}
+{$OVERFLOWCHECKS OFF}
+{$RANGECHECKS OFF}
+{$REFERENCEINFO ON}
+{$SAFEDIVIDE OFF}
+{$STACKFRAMES ON}
+{$TYPEDADDRESS OFF}
+{$VARSTRINGCHECKS ON}
+{$WRITEABLECONST OFF}
+{$MINENUMSIZE 1}
+{$IMAGEBASE $400000}
+{$DESCRIPTION 'Thread Pool - Like JAVA Thread Pool Executor'}
+{$RUNONLY}
+{$IMPLICITBUILD OFF}
+
+requires
+  rtl;
+
+contains
+  BlockingQueue in '..\..\..\Source\Integrates\Pool\BlockingQueue.pas',
+  Collections in '..\..\..\Source\Integrates\Pool\Collections.pas',
+  Exceptions in '..\..\..\Source\Integrates\Pool\Exceptions.pas',
+  ExecutorService in '..\..\..\Source\Integrates\Pool\ExecutorService.pas',
+  Threading in '..\..\..\Source\Integrates\Pool\Threading.pas',
+  ThreadPoolExecutor in '..\..\..\Source\Integrates\Pool\ThreadPoolExecutor.pas',
+  Future in '..\..\..\Source\Integrates\Pool\Future.pas',
+  Callable in '..\..\..\Source\Integrates\Pool\Callable.pas',
+  AbstractExecutorService in '..\..\..\Source\Integrates\Pool\AbstractExecutorService.pas',
+  RunnableFuture in '..\..\..\Source\Integrates\Pool\RunnableFuture.pas',
+  FutureTask in '..\..\..\Source\Integrates\Pool\FutureTask.pas',
+  CompletitionService in '..\..\..\Source\Integrates\Pool\CompletitionService.pas',
+  ExecutorCompletitionService in '..\..\..\Source\Integrates\Pool\ExecutorCompletitionService.pas',
+  Executors in '..\..\..\Source\Integrates\Pool\Executors.pas',
+  Executor in '..\..\..\Source\Integrates\Pool\Executor.pas',
+  Runnable in '..\..\..\Source\Integrates\Pool\Runnable.pas';
+
+end.
